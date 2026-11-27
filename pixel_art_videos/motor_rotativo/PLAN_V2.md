@@ -21,8 +21,11 @@ Renderizar en la PC con la RTX 3070 (`render_motor_rotativo.bat`).
   góticos apuntados, cables principales, red de tirantes diagonales, banquetas, faroles.
 - **Atardecer**: cielo degradado naranja → morado, sol bajo, **mar** con reflejos, ciudad con edificios a lo lejos.
 - **Tráfico**: otros carros (formas originales) pasando en ambos sentidos, con faros y calaveras encendidos.
-- Pregunta pendiente al usuario: ¿el carro protagonista sigue siendo deportivo de calle o un
-  **prototipo de carreras tipo Le Mans** con colores inventados?
+- **Carro protagonista: prototipo de carreras tipo Le Mans** (decidido por el usuario), con formas y colores
+  inventados, sin logos ni la pintura real de ningún equipo: carrocería baja y ancha, cabina cerrada tipo burbuja,
+  aleta trasera, alerón grande, tomas de aire laterales, rines de carreras, números de competencia inventados.
+  El motor de 4 rotores va **atrás del piloto** (motor central): el zoom va a la **cubierta trasera del motor**
+  (no al capot delantero), que se abre y sale volando igual que en la versión 1.
 
 ## 3. Motor de 4 rotores (tipo el del Mazda 787B / R26B, sin marcas ni logos)
 - 4 carcasas de rotor en fila con placas intermedias, 4 tubos de admisión cromados, 4 escapes que se juntan,
