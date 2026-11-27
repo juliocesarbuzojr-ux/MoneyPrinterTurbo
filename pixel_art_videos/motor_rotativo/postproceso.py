@@ -630,6 +630,7 @@ def main():
     ap.add_argument("--audio", default=None)
     ap.add_argument("--preview", default=None)
     ap.add_argument("--preview-dir", default=None)
+    ap.add_argument("--hasta", type=int, default=NF, help="solo los primeros N cuadros (avance)")
     args = ap.parse_args()
     cam = Cam(os.path.join(args.render, "camara_por_cuadro.json"))
     pal = build_palette(args.render, cam, os.path.join(args.render, "paleta.json"))
@@ -645,7 +646,7 @@ def main():
            "-r", str(rc.FPS), "-i", "-", "-c:v", "libx264", "-preset", "slow", "-crf", "16",
            "-pix_fmt", "yuv420p", "-movflags", "+faststart", tmp]
     pr = subprocess.Popen(cmd, stdin=subprocess.PIPE)
-    for f in range(NF):
+    for f in range(min(args.hasta, NF)):
         pr.stdin.write(final_frame(args.render, f, cam, pal).tobytes())
         if f % 48 == 0:
             print("cuadro", f, flush=True)
